@@ -6,6 +6,7 @@ const email = ref('kerendev@gmail.com');
 const copyEmail = () => {
   navigator.clipboard.writeText(email.value);
 };
+
 </script>
 
 <template>
@@ -13,7 +14,7 @@ const copyEmail = () => {
       <!-- Presentación -->
       <div class="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
         <div class="text-center mb-5 lg:mr-20">
-          <img src="../assets/foto/fotoDev.png" alt="Foto de perfil" class="w-56 h-56 rounded-full mx-auto mb-4">
+          <img src="@/assets/foto/fotoDev.png" alt="Foto de perfil" class="w-56 h-56 rounded-full mx-auto mb-4">
           <h1 class="text-4xl font-bold mb-4">¡Hola, Yo soy Keren!</h1>
           <p class="text-lg text-gray-200 mb-8">Deasarrolladora Back-End</p>
             <!-- Información de contacto -->
@@ -22,16 +23,16 @@ const copyEmail = () => {
                 <pre class="bg-gray-100 rounded-lg shadow-inner p-4 w-media h-5 text-lg font-mono text-gray-800 flex items-center">
                     <span>bermeokeren@gmail.com </span>
                     <button @click="copyEmail" class="w-5">
-                        <img src="../assets/foto/copy.png" alt="copy" class="w-5 h-5">
+                        <img src="@/assets/foto/copy.png" alt="copy" class="w-5 h-5">
                     </button>
                 </pre>
               </div>
                 <div class="flex space-x-4">
                     <a href="https://www.linkedin.com/in/keren-bermeo-162655185/" class="bg-white p-2 rounded-full">
-                        <img src="../assets/foto/linkedin.png" alt="linkedin" class="w-8 h-8">
+                        <img src="@/assets/foto/linkedin.png" alt="linkedin" class="w-8 h-8">
                     </a>
                     <a href="https://github.com/KerenBermeo?tab=repositories" class="bg-white p-2 rounded-full">
-                        <img src="../assets/foto/github.png" alt="github" class="w-8 h-8">
+                        <img src="@/assets/foto/github.png" alt="github" class="w-8 h-8">
                     </a>
                 </div>
               </div>
@@ -56,25 +57,25 @@ const copyEmail = () => {
             <h3 class="text-xl font-bold mb-4">Email Query</h3>
               <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-lg shadow-md relative">
                 <a href="https://github.com/KerenBermeo/CorreoQuery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <img src="../assets/foto/github.png" alt="github" class="w-20 h-20">
+                  <img src="@/assets/foto/github.png" alt="github" class="w-20 h-20">
                 </a>
-                <img src="../assets/foto/correoQuery.png" alt="correoQuery" class="w-50 h-50">   
+                <img src="@/assets/foto/correoQuery.png" alt="correoQuery" class="w-50 h-50">   
               </div>
               <p class="text-gray-600 mt-3">Description</p>
               <p class="text-gray-500">Email Query es un proyecto cuyo objetivo es realizar búsquedas indexadas. He desarrollado una interfaz que permite buscar información dentro de una base de datos de correos electrónicos utilizando el motor de búsqueda ZincSearch.</p>
               <div class="flex items-center mt-4">
                 <div class="flex space-x-2">
                   <button class="focus:outline-none group">
-                    <img src="../assets/foto/go.png" alt="Go" title="Go" class="w-8 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="@/assets/foto/go.png" alt="Go" title="Go" class="w-8 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
                   </button>
                   <button class="focus:outline-none group">
-                    <img src="../assets/foto/zincsearch.png" alt="zinc" title="zinc" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="@/assets/foto/zincsearch.png" alt="zinc" title="zinc" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
                   </button>
                   <button class="focus:outline-none group">
-                    <img src="../assets/foto/vue.png" alt="Vue3" title="Vue3" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="@/assets/foto/vue.png" alt="Vue3" title="Vue3" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
                   </button>
                   <button class="focus:outline-none group">
-                    <img src="../assets/foto/tailwind.png" alt="Tailwind" title="Tailwind" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="@/assets/foto/tailwind.png" alt="Tailwind" title="Tailwind" class="w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
                   </button>
                 </div>
               </div>
@@ -86,14 +87,14 @@ const copyEmail = () => {
             <div class="flex justify-between">
               <h3 class="text-xl font-bold mb-4">API DateTime</h3>
               <a href="https://datetime-api-kbdev-9a1750c146c9.herokuapp.com/">
-                <img src="../assets/foto/ir_a_pagina.png" alt="Ir a pagina" title="Ir a pagina" class="w-5 h-5">
+                <img src="@/assets/foto/ir_a_pagina.png" alt="Ir a pagina" title="Ir a pagina" class="w-5 h-5">
               </a>
             </div>
             <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-lg shadow-md relative">
               <a href="https://github.com/KerenBermeo/DateTime" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <img src="../assets/foto/github.png" alt="github" class="w-20 h-20">
+                <img src="@/assets/foto/github.png" alt="github" class="w-20 h-20">
               </a>
-              <img src="../assets/foto/DateTime.png" alt="DateTime" class="w-50 h-45">
+              <img src="@/assets/foto/DateTime.png" alt="DateTime" class="w-50 h-45">
             </div>
             <p class="text-gray-600 mt-3">Description</p>
             <p class="text-gray-500">Es una API que proporciona múltiples
@@ -103,10 +104,10 @@ const copyEmail = () => {
             <div class="flex items-center mt-4">
               <div class="flex space-x-2">
                 <button class="focus:outline-none group">
-                  <img src="../assets/foto/Pythonlogo.png" alt="Python" title="Python" class="w-6 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                  <img src="@/assets/foto/Pythonlogo.png" alt="Python" title="Python" class="w-6 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
                 <button class="focus:outline-none group">
-                  <img src="../assets/foto/fastapi.png" alt="fastapi" title="FastAPI" class=" w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                  <img src="@/assets/foto/fastapi.png" alt="fastapi" title="FastAPI" class=" w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
               </div>
             </div>
@@ -118,24 +119,24 @@ const copyEmail = () => {
             <div class="flex justify-between">
               <h3 class="text-xl font-bold mb-4">API ShortyURL</h3>
               <a href="https://kb-shorty-3ec1c0df036e.herokuapp.com/">
-                <img src="../assets/foto/ir_a_pagina.png" alt="Ir a pagina" title="Ir a pagina" class="w-5 h-5">
+                <img src="@/assets/foto/ir_a_pagina.png" alt="Ir a pagina" title="Ir a pagina" class="w-5 h-5">
               </a>
             </div>
             <div class="bg-gradient-to-r from-indigo-500 to-purple-500 p-3 rounded-lg shadow-md relative">
               <a href="https://github.com/KerenBermeo/ShortyURL" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <img src="../assets/foto/github.png" alt="github" class="w-20 h-20">
+                <img src="@/assets/foto/github.png" alt="github" class="w-20 h-20">
               </a>
-              <img src="../assets/foto/shortyurl.png" alt="ShortyURL" class="w-50 h-45">
+              <img src="@/assets/foto/shortyurl.png" alt="ShortyURL" class="w-50 h-45">
             </div>
             <p class="text-gray-600 mt-3">Description</p>
             <p class="text-gray-500">ShortyURL es una API de acortamiento de URLs desarrollada con Python y ApiFast. Convierte URLs largas en enlaces cortos y manejables. Ofrece redirección rápida, estadísticas opcionales y seguridad integrada. Ideal para desarrolladores que buscan integrar acortamiento de URLs en sus aplicaciones.</p>
             <div class="flex items-center mt-4">
               <div class="flex space-x-2">
                 <button class="focus:outline-none group">
-                  <img src="../assets/foto/Pythonlogo.png" alt="Python" title="Python" class="w-6 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                  <img src="@/assets/foto/Pythonlogo.png" alt="Python" title="Python" class="w-6 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
                 <button class="focus:outline-none group">
-                  <img src="../assets/foto/fastapi.png" alt="fastapi" title="FastAPI" class=" w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                  <img src="@/assets/foto/fastapi.png" alt="fastapi" title="FastAPI" class=" w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
               </div>
             </div>
