@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const email = ref('kerendev@gmail.com');
+const email = ref('bermeokeren@gmail.com');
 
 const copyEmail = () => {
   navigator.clipboard.writeText(email.value);
