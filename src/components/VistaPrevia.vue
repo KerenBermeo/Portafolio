@@ -147,12 +147,12 @@ const copyEmail = () => {
       </div>
   
       <!-- Sección de Tecnologías, Habilidades, Educación y Objetivo -->
-      <div class="py-12">
+      <div class="py-12 p-4 mt-8 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500">
         <div class="container mx-auto">
           <!-- Tecnologías Destacadas -->
           <div>
-            <h2 class="text-2xl font-bold mb-4">Tecnologías Destacadas</h2>
-            <ul class="list-disc pl-8">
+            <h2 class="text-2xl font-bold mb-4 text-white">Tecnologías Destacadas</h2>
+            <ul class="list-disc pl-8 text-white">
               <li>Backend: Go (Golang), Python, JavaScript</li>
               <li>Frontend: Vue.js 3 with Tailwind CSS, React, Basic HTML y CSS</li>
               <li>Database: PostgreSQL</li>
@@ -161,9 +161,9 @@ const copyEmail = () => {
   
   
          <!-- Habilidades Adicionales -->
-         <div class="mt-8">
-          <h2 class="text-2xl font-bold mb-4">Habilidades Adicionales</h2>
-          <ul class="space-y-4 text-left text-black">
+         <div class="p-4 mt-8 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500">
+          <h2 class="text-2xl font-bold mb-4 text-white">Habilidades Adicionales</h2>
+          <ul class="space-y-4 text-left text-white">
             <li class="flex items-center space-x-3 rtl:space-x-reverse">
               <svg class="flex-shrink-0 w-3.5 h-3.5 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
@@ -204,20 +204,67 @@ const copyEmail = () => {
         </div>
 
 
-  
+
           <!-- Educación -->
-          <div class="mt-8">
-            <h2 class="text-2xl font-bold mb-4">Educacion</h2>
-            <ul class="list-disc pl-8">
-              <li> HTML+CSS+Javascript para principiantes - Desarrollo Web [04/08/2023]</li>
-              <li> Academia Python - De Cero a Experto en Python con Ejercicios a fecha de [10/04/2024]</li>
-            </ul>
+          <div class=" p-4 mt-8 rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-white">Educación</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Codeable -->
+              <div class="bg-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Codeable</h3>
+                <p class="text-gray-600">Bootcamp Codeable</p>
+                <p class="text-gray-500">Oct 2023 - Feb 2024</p>
+                <p class="text-gray-500">
+                  <a href="https://certificado-codeable.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                </p>
+              </div>
+
+              <!-- freecodecamp -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">freecodecamp</h3>
+                <p class="text-gray-600">Back End Development and APIs</p>
+                <p class="text-gray-500">May 2024</p>
+                <p class="text-gray-500">
+                  <a href="https://certificado-freecodecamp.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                </p>
+              </div>
+
+              <!-- Cosdigo Facilito -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Cosdigo Facilito</h3>
+                <p class="text-gray-600">Curso Profesional de Docker</p>
+                <p class="text-gray-500">May 2024</p>
+                <p class="text-gray-500">
+                  <a href="https://certificado-codigo-facilito.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                </p>
+              </div>
+
+              <!-- Udemy - Academia Python -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Udemy</h3>
+                <p class="text-gray-600">Academia Python - De Cero a Experto en Python con Ejercicios</p>
+                <p class="text-gray-500">Oct 2023 - Abr 2024</p>
+                <p class="text-gray-500">
+                  <a href="https://certificado-udemy-python.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                </p>
+              </div>
+
+              <!-- Udemy - HTML+CSS+JavaScript -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Udemy</h3>
+                <p class="text-gray-600">HTML+CSS+JavaScript - Desarrollo Web</p>
+                <p class="text-gray-500">Jul 2023 - Ago 2023</p>
+                <p class="text-gray-500">
+                  <a href="https://certificado-udemy-html-css-javascript.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                </p>
+              </div>
+            </div>
           </div>
   
           <!-- Objetivo -->
           <div class="mt-8">
-            <h2 class="text-2xl font-bold mb-4">Objectivo</h2>
-            <p class="text-gray-600">Busco oportunidades para contribuir y crecer en un entorno colaborativo. Mi enfoque es utilizar mis habilidades para impulsar el desarrollo de soluciones web innovadoras y de alto impacto.</p>
+            <h2 class="text-2xl font-bold mb-4 text-white">Objectivo</h2>
+            <p class="text-white">Busco oportunidades para contribuir y crecer en un entorno colaborativo. Mi enfoque es utilizar mis habilidades para impulsar el desarrollo de soluciones web innovadoras y de alto impacto.</p>
           </div>
 
         </div>
