@@ -136,7 +136,10 @@ const copyEmail = () => {
                   <img src="@/assets/foto/Pythonlogo.png" alt="Python" title="Python" class="w-6 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
                 <button class="focus:outline-none group">
-                  <img src="@/assets/foto/fastapi.png" alt="fastapi" title="FastAPI" class=" w-5 h-5 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                  <img src="@/assets/foto/flask.png" alt="fastapi" title="Flask" class=" w-7 h-7 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                </button>
+                <button class="focus:outline-none group">
+                  <img src="@/assets/foto/mongodb.png" alt="mongodb" title="MongoDB" class=" w-13 h-6 opacity-75 hover:opacity-100 transition-opacity duration-300">
                 </button>
               </div>
             </div>
@@ -231,7 +234,7 @@ const copyEmail = () => {
 
               <!-- Cosdigo Facilito -->
               <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold">Cosdigo Facilito</h3>
+                <h3 class="text-xl font-bold">Codigo Facilito</h3>
                 <p class="text-gray-600">Curso Profesional de Docker</p>
                 <p class="text-gray-500">May 2024</p>
                 <p class="text-gray-500">
