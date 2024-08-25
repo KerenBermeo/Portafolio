@@ -218,7 +218,7 @@ const copyEmail = () => {
                 <p class="text-gray-600">Bootcamp Codeable</p>
                 <p class="text-gray-500">Oct 2023 - Feb 2024</p>
                 <p class="text-gray-500">
-                  <a href="https://certificado-codeable.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                  <a href="https://www.linkedin.com/in/keren-bermeo-162655185/details/certifications/1719952691906/single-media-viewer/?profileId=ACoAACuzT5oBs4mLaVPiK7xGjwsMSy27FaaAaoE" target="_blank" class="text-blue-500 underline">Certificado</a>
                 </p>
               </div>
 
@@ -228,7 +228,7 @@ const copyEmail = () => {
                 <p class="text-gray-600">Back End Development and APIs</p>
                 <p class="text-gray-500">May 2024</p>
                 <p class="text-gray-500">
-                  <a href="https://certificado-freecodecamp.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                  <a href="https://www.freecodecamp.org/certification/koely/back-end-development-and-apis" target="_blank" class="text-blue-500 underline">Certificado</a>
                 </p>
               </div>
 
@@ -238,7 +238,7 @@ const copyEmail = () => {
                 <p class="text-gray-600">Curso Profesional de Docker</p>
                 <p class="text-gray-500">May 2024</p>
                 <p class="text-gray-500">
-                  <a href="https://certificado-codigo-facilito.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                  <a href="https://www.linkedin.com/in/keren-bermeo-162655185/details/certifications/1715218666651/single-media-viewer/?profileId=ACoAACuzT5oBs4mLaVPiK7xGjwsMSy27FaaAaoE" target="_blank" class="text-blue-500 underline">Certificado</a>
                 </p>
               </div>
 
@@ -248,7 +248,7 @@ const copyEmail = () => {
                 <p class="text-gray-600">Academia Python - De Cero a Experto en Python con Ejercicios</p>
                 <p class="text-gray-500">Oct 2023 - Abr 2024</p>
                 <p class="text-gray-500">
-                  <a href="https://certificado-udemy-python.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                  <a href="https://www.udemy.com/certificate/UC-f3111260-4242-4c7a-a99e-b175c61bb415/" target="_blank" class="text-blue-500 underline">Certificado</a>
                 </p>
               </div>
 
@@ -258,7 +258,7 @@ const copyEmail = () => {
                 <p class="text-gray-600">HTML+CSS+JavaScript - Desarrollo Web</p>
                 <p class="text-gray-500">Jul 2023 - Ago 2023</p>
                 <p class="text-gray-500">
-                  <a href="https://certificado-udemy-html-css-javascript.com" target="_blank" class="text-blue-500 underline">Certificado</a>
+                  <a href="https://www.udemy.com/certificate/UC-e943f059-1ecb-4cdb-8b07-d5d501d4f6f7/" target="_blank" class="text-blue-500 underline">Certificado</a>
                 </p>
               </div>
             </div>
