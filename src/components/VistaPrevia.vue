@@ -16,7 +16,7 @@ const copyEmail = () => {
         <div class="text-center mb-5 lg:mr-20">
           <img src="@/assets/foto/fotoDev.png" alt="Foto de perfil" loading="lazy" class="w-56 h-56 rounded-full mx-auto mb-4">
           <h1 class="text-4xl font-bold mb-4">¡Hola, Yo soy Keren!</h1>
-          <p class="text-lg text-gray-200 mb-8">Deasarrolladora Back-End</p>
+          <p class="text-lg text-gray-200 mb-8">Desarrolladora Back-End</p>
             <!-- Información de contacto -->
             <div class="flex flex-col items-center space-y-4">
               <div class="flex items-center space-x-4 justify-center mb-4">
