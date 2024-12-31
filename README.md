@@ -1,46 +1,48 @@
-# vue-project
+# Cómo ejecutar este proyecto Vue 3 con Vite
 
-This template should help get you started developing with Vue 3 in Vite.
+Este archivo contiene las instrucciones básicas para ejecutar este proyecto localmente. 
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Instalación
 
-## Type Support for `.vue` Imports in TS
+1. Cambia al directorio del proyecto:
+   ```bash
+   cd <directorio-del-proyecto>
+   ```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+2. Instala las dependencias necesarias:
+   ```bash
+   npm install
+   ```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+---
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Ejecutar la aplicación localmente
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+Para iniciar el servidor de desarrollo:
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+Esto levantará el proyecto en un servidor local. Una vez que el servidor esté corriendo, podrás acceder a la aplicación en tu navegador en la dirección indicada (normalmente `http://localhost:3000`).
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## Scripts disponibles
 
-```sh
-npm run lint
-```
+- **`dev`**: Inicia el servidor de desarrollo con Vite.
+- **`build`**: Compila el proyecto para producción.
+- **`preview`**: Inicia un servidor para previsualizar la versión compilada.
+
+---
+
+## Problemas comunes
+
+1. **Error: `Missing script: "serve"`**
+   - Solución: Usa el comando `npm run dev` en lugar de `npm run serve`.
+
+2. **Faltan dependencias**:
+   - Asegúrate de ejecutar `npm install` antes de cualquier otro comando.
+
+---
