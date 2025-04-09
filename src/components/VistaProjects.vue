@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { Github, ExternalLink } from 'lucide-vue-next'
+import goImage from '@/assets/foto/go.png'
+import dateTimeImage from '@/assets/foto/DateTime.png'
+import shortyUrlImage from '@/assets/foto/shortyurl.png'
 
 const featuredProjects = [
   {
     title: "FLashMentor API",
     description: "La API FlashMentor está diseñada para respaldar una aplicación de estudio mediante el uso de flashcards.",
-    image: "/assets/foto/go.png?height=200&width=300",
+    image:  goImage,
     technologies: ["Go"],
     githubLink: "https://github.com/KerenBermeo/FlashMentor",
     liveLink: "https://proyecto1.com"
@@ -13,7 +16,7 @@ const featuredProjects = [
   {
     title: "DateTime API",
     description: "API versátil que ofrece múltiples funcionalidades relacionadas con la manipulación y conversión de fechas y horas.",
-    image: "/assets/foto/DateTime.png?height=200&width=300",
+    image: dateTimeImage,
     technologies: ["Python", "FastAPI"],
     githubLink: "https://github.com/KerenBermeo/DateTime",
     liveLink: "https://proyecto1.com"
@@ -21,7 +24,7 @@ const featuredProjects = [
   {
     title: "ShortyURL API",
     description: "ShortyURL es una API de acortamiento de URLs desarrollada con Python y ApiFast que convierte URLs largas en enlaces cortos.",
-    image: "/assets/foto/shortyurl.png?height=200&width=300",
+    image: shortyUrlImage,
     technologies: ["Python", "Flask"],
     githubLink: "https://github.com/KerenBermeo/ShortyURL",
     liveLink: "https://proyecto3.com"
