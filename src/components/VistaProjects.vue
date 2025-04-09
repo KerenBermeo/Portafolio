@@ -5,7 +5,7 @@ const featuredProjects = [
   {
     title: "FLashMentor API",
     description: "La API FlashMentor está diseñada para respaldar una aplicación de estudio mediante el uso de flashcards.",
-    image: "/src/assets/foto/go.png?height=200&width=300",
+    image: "/assets/foto/go.png?height=200&width=300",
     technologies: ["Go"],
     githubLink: "https://github.com/KerenBermeo/FlashMentor",
     liveLink: "https://proyecto1.com"
@@ -13,7 +13,7 @@ const featuredProjects = [
   {
     title: "DateTime API",
     description: "API versátil que ofrece múltiples funcionalidades relacionadas con la manipulación y conversión de fechas y horas.",
-    image: "/src/assets/foto/DateTime.png?height=200&width=300",
+    image: "/assets/foto/DateTime.png?height=200&width=300",
     technologies: ["Python", "FastAPI"],
     githubLink: "https://github.com/KerenBermeo/DateTime",
     liveLink: "https://proyecto1.com"
@@ -21,7 +21,7 @@ const featuredProjects = [
   {
     title: "ShortyURL API",
     description: "ShortyURL es una API de acortamiento de URLs desarrollada con Python y ApiFast que convierte URLs largas en enlaces cortos.",
-    image: "/src/assets/foto/shortyurl.png?height=200&width=300",
+    image: "/assets/foto/shortyurl.png?height=200&width=300",
     technologies: ["Python", "Flask"],
     githubLink: "https://github.com/KerenBermeo/ShortyURL",
     liveLink: "https://proyecto3.com"
