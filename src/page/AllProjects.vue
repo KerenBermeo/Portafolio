@@ -7,6 +7,9 @@ import shortyUrlImage from '@/assets/foto/shortyurl.png'
 import moviGoImage from '@/assets/foto/logo_MoviGo.png'
 import portalLabImage from '@/assets/foto/portalLab.png'
 import pokeapiImage from '@/assets/foto/pokeapi.png'
+import { useToast, POSITION } from 'vue-toastification' 
+
+const toast = useToast();
 
 interface Project {
   id: number;
@@ -15,8 +18,25 @@ interface Project {
   image: string;
   technologies: string[];
   githubLink: string;
-  liveLink: string;
+  liveLink: string | (()=> void);
 }
+
+
+const showDemoAlert = (projectTitle: string) => {
+  toast.info(`Lo sentimos, actualmente no hay una demo disponible para "${projectTitle}"`, {
+    timeout: 3000,
+    icon: '❕',
+    position: POSITION.TOP_RIGHT
+  });
+};
+
+const handleLiveLinkClick = (liveLink: string | (() => void)) => {
+  if (typeof liveLink === 'string') {
+    window.open(liveLink, '_blank');
+  } else {
+    liveLink();
+  }
+};
 
 
 const projects = ref<Project[]>([
@@ -27,7 +47,7 @@ const projects = ref<Project[]>([
     image: goImage,
     technologies: ["Go", "GORM", "Gin", "MySQL"],
     githubLink: "https://github.com/KerenBermeo/FlashMentor",
-    liveLink: "https://proyecto1.com"
+    liveLink: () =>  showDemoAlert("API FlashMentor"),
   },
   {
     id: 2,
@@ -36,7 +56,7 @@ const projects = ref<Project[]>([
     image: dateTimeImage,
     technologies: ["Python", "FastAPI"],
     githubLink: "https://github.com/KerenBermeo/DateTime",
-    liveLink: "https://proyecto2.com"
+    liveLink: () =>  showDemoAlert("DATETIME API"),
   },
   {
     id: 3,
@@ -45,7 +65,7 @@ const projects = ref<Project[]>([
     image: shortyUrlImage,
     technologies: ["Python", "Flask"],
     githubLink: "https://github.com/KerenBermeo/ShortyURL",
-    liveLink: "https://proyecto3.com"
+    liveLink: () =>  showDemoAlert("ShortyURL API"),
   },
   {
     id: 4,
@@ -54,7 +74,7 @@ const projects = ref<Project[]>([
     image: moviGoImage,
     technologies: ["Java", "MySQL"],
     githubLink: "https://github.com/KerenBermeo/MoviGo",
-    liveLink: "https://proyecto4.com"
+    liveLink: () =>  showDemoAlert("MoviGo"),
   },
   {
     id: 5,
@@ -63,16 +83,16 @@ const projects = ref<Project[]>([
     image: portalLabImage,
     technologies: ["PHP", "HTML", "CSS", "Javascript", "MariaDB"],
     githubLink: "https://github.com/KerenBermeo/PortalLab",
-    liveLink: "https://proyecto5.com"
+    liveLink: () =>  showDemoAlert("Portal Lab"),
   },
   {
     id: 6,
-    title: "cosumo_pokeapi",
+    title: "Prueba pokeapi",
     description: "Experimento de consumo de pokeAPI y utilizacion de EJS",
     image: pokeapiImage ,
     technologies: ["Jacascript", "EJS", "Node.js", "Express", "Axios"],
     githubLink: "https://github.com/KerenBermeo/cosumo_pokeapi",
-    liveLink: "https://proyecto6.com"
+    liveLink: () =>  showDemoAlert("Prueba pokeapi"),
   }
 ]);
 </script>
@@ -106,9 +126,11 @@ const projects = ref<Project[]>([
                 <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="flex items-center text-primary hover:underline">
                   <Github class="mr-2 h-4 w-4" /> Código
                 </a>
-                <a :href="project.liveLink" target="_blank" rel="noopener noreferrer" class="flex items-center text-primary hover:underline">
-                  <ExternalLink class="mr-2 h-4 w-4" /> Demo
-                </a>
+                <button 
+                @click="handleLiveLinkClick(project.liveLink)"
+                class="flex items-center text-primary hover:underline cursor-pointer">
+                <ExternalLink class="mr-2 h-4 w-4" /> Demo
+              </button>
               </div>
           </div>
         </div>

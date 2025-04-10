@@ -3,6 +3,25 @@ import { Github, ExternalLink } from 'lucide-vue-next'
 import goImage from '@/assets/foto/go.png'
 import dateTimeImage from '@/assets/foto/DateTime.png'
 import shortyUrlImage from '@/assets/foto/shortyurl.png'
+import { useToast, POSITION } from 'vue-toastification' 
+
+const toast = useToast();
+
+const showDemoAlert = (projectTitle: string) => {
+  toast.info(`Lo sentimos, actualmente no hay una demo disponible para "${projectTitle}"`, {
+    timeout: 3000,
+    icon: '❕',
+    position: POSITION.TOP_RIGHT
+  });
+};
+
+const handleLiveLinkClick = (liveLink: string | (() => void)) => {
+  if (typeof liveLink === 'string') {
+    window.open(liveLink, '_blank');
+  } else {
+    liveLink();
+  }
+};
 
 const featuredProjects = [
   {
@@ -11,7 +30,7 @@ const featuredProjects = [
     image:  goImage,
     technologies: ["Go"],
     githubLink: "https://github.com/KerenBermeo/FlashMentor",
-    liveLink: "https://proyecto1.com"
+    liveLink: () =>  showDemoAlert("API FlashMentor"),
   },
   {
     title: "DateTime API",
@@ -19,7 +38,7 @@ const featuredProjects = [
     image: dateTimeImage,
     technologies: ["Python", "FastAPI"],
     githubLink: "https://github.com/KerenBermeo/DateTime",
-    liveLink: "https://proyecto1.com"
+    liveLink: () =>  showDemoAlert("DateTime API"),
   },
   {
     title: "ShortyURL API",
@@ -27,7 +46,7 @@ const featuredProjects = [
     image: shortyUrlImage,
     technologies: ["Python", "Flask"],
     githubLink: "https://github.com/KerenBermeo/ShortyURL",
-    liveLink: "https://proyecto3.com"
+    liveLink: () =>  showDemoAlert("ShortyURL API"),
   }
 ]
 </script>
@@ -51,9 +70,9 @@ const featuredProjects = [
                 <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="flex items-center text-primary hover:underline">
                   <Github class="mr-2 h-4 w-4" /> Código
                 </a>
-                <a :href="project.liveLink" target="_blank" rel="noopener noreferrer" class="flex items-center text-primary hover:underline">
+                <button @click="handleLiveLinkClick(project.liveLink)" target="_blank" rel="noopener noreferrer" class="flex items-center text-primary hover:underline">
                   <ExternalLink class="mr-2 h-4 w-4" /> Demo
-                </a>
+                </button>
               </div>
             </div>
           </div>
